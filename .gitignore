@@ -143,3 +143,4 @@ server/logs/
 # Misc
 *.tgz
 *.tar.gz
+.vercel
