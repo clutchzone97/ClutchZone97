@@ -17,13 +17,11 @@ import settingsInstance from './models/Settings.js';
 dotenv.config();
 
 // Connect to MongoDB
-// Commenting out database connection for local testing
-// connectDB();
-console.log('Running in mock data mode - no database connection');
+connectDB();
 
 // Create Express app
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
